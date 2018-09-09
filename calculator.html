@@ -1,35 +1,53 @@
 <html>
 <body>
-<button id="butt1" onclick="add()">add</button>
-<!--<button id="butt2" onclick="sub">sub</button>
-<button id="butt3" onclick="mul">multi</button>
-<button id="butt4" onclick="div">div</button>
--->
+<input type="number" id="1st">
+<input type="number" id="2nd">
+
+<button id="butt1" onclick='add()'>add</button>
+<button id="butt2" onclick="sub()">sub</button>
+<button id="butt3" onclick="mul()">multi</button>
+<button id="butt4" onclick="div()">div</button>
+
+<p id="dem"></p>
 <script>
 function add()
 {
-    var r = 7;
-    document.write.getElementById("butt1").innerHTML= r;
+    var x=document.getElementById("1st").value;
+    var y=document.getElementById("2nd").value;
+    var r=parseInt(x)+parseInt(y);
+    
+    document.getElementById("dem").innerHTML= r;
 
 }
-/*function sub(x,y)
+function sub(x,y)
 {
-    r = x-y;
-    document.write.getElementById("butt1").innerHTML= x-y;
+    var x=document.getElementById("1st").value;
+    var y=document.getElementById("2nd").value;
+    var r=parseInt(x)-parseInt(y);
+    
+    document.getElementById("dem").innerHTML= r;
 
 }
-function multi(x,y)
+function mul(x,y)
 {
-    r = x*y;
-    comment.wirte(r)document.write.getElementById("butt1").innerHTML= x*y;
+    var x=document.getElementById("1st").value;
+    var y=document.getElementById("2nd").value;
+    var r=parseInt(x)*parseInt(y);
+    
+    document.getElementById("dem").innerHTML= r;
 
 }
 function div(x,y)
 {
-    r = x/y;
-    document.write.getElementById("butt1").innerHTML= x/y;
+     var x=document.getElementById("1st").value;
+    var y=document.getElementById("2nd").value;
+    var r=parseInt(x)/parseInt(y);
+    
+    document.getElementById("dem").innerHTML= r;
 
-}*/
+}
+//document.getElementById("butt1").onclick= add();
+
 
 </script>
 </body>
